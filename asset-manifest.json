@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SubashDairy/static/css/main.15b8f78d.css",
-    "main.js": "/SubashDairy/static/js/main.676799b9.js",
+    "main.css": "/SubashDairy/static/css/main.c9b6f567.css",
+    "main.js": "/SubashDairy/static/js/main.407ad357.js",
     "static/js/453.a6f0c5b7.chunk.js": "/SubashDairy/static/js/453.a6f0c5b7.chunk.js",
     "static/media/girlwithMilk.png": "/SubashDairy/static/media/girlwithMilk.c3e5e7b3143a70021829.png",
     "static/media/Milk.jpg": "/SubashDairy/static/media/Milk.c98c578c4afeff1d9853.jpg",
@@ -9,12 +9,12 @@
     "static/media/Yogurt.jpg": "/SubashDairy/static/media/Yogurt.9eafac18fcb933b1ca82.jpg",
     "static/media/dairyLogo.png": "/SubashDairy/static/media/dairyLogo.ccfed3bd379c5eeb37e9.png",
     "index.html": "/SubashDairy/index.html",
-    "main.15b8f78d.css.map": "/SubashDairy/static/css/main.15b8f78d.css.map",
-    "main.676799b9.js.map": "/SubashDairy/static/js/main.676799b9.js.map",
+    "main.c9b6f567.css.map": "/SubashDairy/static/css/main.c9b6f567.css.map",
+    "main.407ad357.js.map": "/SubashDairy/static/js/main.407ad357.js.map",
     "453.a6f0c5b7.chunk.js.map": "/SubashDairy/static/js/453.a6f0c5b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15b8f78d.css",
-    "static/js/main.676799b9.js"
+    "static/css/main.c9b6f567.css",
+    "static/js/main.407ad357.js"
   ]
 }
