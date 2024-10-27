@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15b8f78d.css",
+    "main.js": "/static/js/main.1b249c9c.js",
+    "static/js/453.a6f0c5b7.chunk.js": "/static/js/453.a6f0c5b7.chunk.js",
+    "static/media/girlwithMilk.png": "/static/media/girlwithMilk.c3e5e7b3143a70021829.png",
+    "static/media/Milk.jpg": "/static/media/Milk.c98c578c4afeff1d9853.jpg",
+    "static/media/cheese.jpg": "/static/media/cheese.38911804c7fc3e0f0200.jpg",
+    "static/media/Yogurt.jpg": "/static/media/Yogurt.9eafac18fcb933b1ca82.jpg",
+    "static/media/dairyLogo.png": "/static/media/dairyLogo.ccfed3bd379c5eeb37e9.png",
+    "index.html": "/index.html",
+    "main.15b8f78d.css.map": "/static/css/main.15b8f78d.css.map",
+    "main.1b249c9c.js.map": "/static/js/main.1b249c9c.js.map",
+    "453.a6f0c5b7.chunk.js.map": "/static/js/453.a6f0c5b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15b8f78d.css",
+    "static/js/main.1b249c9c.js"
+  ]
+}
