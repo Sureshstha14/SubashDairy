@@ -45,7 +45,7 @@ const HomePage = () => {
         href="https://www.facebook.com/subashtimlcena"
         target="_blank"
         rel="noopener noreferrer"
-        className="mx-2 text-blue-600 hover:text-blue-500 hover:scale-110 transition-all duration-300"
+        className="mx-2 text-blue-600 hover:text-blue-500 hover:scale-110 transition-all duration-300 hover:animate-shake"
         title="Follow us on Facebook"
     >
         <FaFacebook size={30} />

@@ -1,61 +1,78 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure Bootstrap JS is imported
-import logo from '../Images/dairyLogo.png'; // Adjust the path according to your structure
-import { Dropdown } from 'react-bootstrap';
-// import { Link } from 'react-alice-carousel';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import DairyLogo from '../Images/dairyLogo.png';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/esm/Button';
 import { Link } from 'react-router-dom';
-const Navbar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light font-mono font-2xl">
-            <div className="container-fluid">
-                <Link className="navbar-brand d-flex align-items-center" href="/">
-                    <img src={logo} alt="Logo" className="d-inline-block align-text-top w-12 h-12 me-2" />
-                    <span className="text-2xl font-mono">HamroDairy</span>
-                </Link>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"   
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="flex justify-normal w-4/5 " id="navbarNav">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
-                        <li className="nav-item">
-                            <Link className="nav-link active hover:bg-blue-300 " aria-current="page" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link hover:bg-blue-300" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link hover:bg-blue-300" to="/contact" tabIndex="-1">Contact Us</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Dropdown>
-                                <Dropdown.Toggle variant="link" id="dropdown-basic">
-                                    Services
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu>
-                                    <Dropdown.Item href="/">Action</Dropdown.Item>
-                                    <Dropdown.Item href="/">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="/">Something else here</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </li>
-                    </ul>
-                    <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    );
-};
+function Navbar1() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary shadow-md py-4">
+      <Container>
+        {/* Logo Section */}
+        <div className="">
+          <Navbar.Brand href="/" className="flex items-center">
+            {/* Logo */}
+            <img src={DairyLogo} alt="Dairy Logo" className="w-20 h-12 mr-2" />
+            {/* Brand Name */}
+            <span className="font-semibold text-xl text-gray-800">Gorakhnath Dairy</span>
+          </Navbar.Brand>
+        </div>
 
-export default Navbar;
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto flex gap-6 font-mono">
+            <Nav.Link
+              href="/"
+              className=" text-gray-900 hover:text-red-600 transform hover:scale-110 transition-all duration-300 ease-in-out hover:underline"
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              href="/about"
+              className="hover:text-blue-500 transform hover:scale-110 transition-all duration-300 ease-in-out hover:underline"
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
+              href="/contact"
+              className="hover:text-blue-500 transform hover:scale-110 transition-all duration-300 ease-in-out hover:underline"
+            >
+              Contact Us
+            </Nav.Link>
+
+            {/* Dropdown */}
+            <NavDropdown title="Services" id="basic-nav-dropdown" className="hover:text-blue-500">
+              <NavDropdown.Item
+                href="#action/3.1"
+                className="hover: transform hover:scale-110 transition-all duration-300 ease-in-out hover:underline"
+              >
+                On-time delivery service
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="#action/3.2"
+                className="hover:text-blue-500 transform hover:scale-110 transition-all duration-300 ease-in-out"
+              >
+                Organic and farm-fresh products
+
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Special pricing for businesses</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Discounted pricing for subscribers
+
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Link to="/signin">
+              <Button className="bg-red-600 rounded-xl hover:bg-red-400 ml-auto">SignIn</Button>
+            </Link>
+          </Nav>
+
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default Navbar1;
